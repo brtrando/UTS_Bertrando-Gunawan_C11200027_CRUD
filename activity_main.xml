@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        android:text="Barang Gudang"
+        android:textSize="28dp" />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/judul"
+        android:text="Masukkan Data"
+        android:textSize="22dp" />
+    <EditText
+        android:id="@+id/produk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv"
+        android:hint="Nama Produk"
+        android:inputType="textPersonName"
+        android:textSize="22dp" />
+    <EditText
+        android:id="@+id/jumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/produk"
+        android:hint="Jumlah Produk"
+        android:inputType="number"
+        android:textSize="22dp" />
+    <EditText
+        android:id="@+id/harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jumlah"
+        android:hint="Harga Produk"
+        android:inputType="number"
+        android:textSize="22dp" />
+    <Button
+        android:id="@+id/btCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/harga"
+        android:text="Create"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/btUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btCreate"
+        android:text="Update"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/btRemove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btUpdate"
+        android:text="Remove"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/btView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btRemove"
+        android:text="View Product"
+        android:textSize="20dp"/>
+
+</RelativeLayout>
